@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.img-cabecera{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+p, h1 {
+    max-width: 80%;
+    margin: 20px auto;
+    margin-bottom: 1.6em;
+}
+.logo {
+    font-family: 'Yellowtail', cursive;
+    font-size: 70px;
+}
+.container {
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #f38181;
+    color: aliceblue;
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.header a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo {
+letter-spacing: 15px;
+font-size: 1.3em;
+}
+
+.menu-icon {
+display: none;
+padding: 0.5rem 1rem;
+}
+.navigation ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.navigation ul li{
+    display: inline-block;
+}
+.navigation ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+.navigation ul li a:hover{
+    background: #ebe26b;
+}
+
+main{
+    padding-top: 12rem;
+}
+.footer{
+    background: #222222;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+/* .footer {
+    padding: 1em;
+}
+nav ul {
+ margin: 0;
+ padding: 0;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ text-align: center;
+}
+nav li{
+    list-style: none;
+    padding:  1em 0;
+}
+nav li a {
+    color: white;
+    font-weight: 700;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.3s;
+}
+nav li a:hover {
+    opacity: 1;
+}
+.footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+footer ul li {
+    list-style: none;
+    align-self: flex-end;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #c1c6ce;
+}
+.red {
+    width: 40%;
+}
+footer p {
+    font-size: 0.8em;
+} */
+
+@media only sceen and (max-width: 767px){
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .navigation ul {
+        display: none;
+    }
+    .navigation ul.show {
+        display: block;
+    }
+        .navigation ul li{
+            display: block;
+        }
+        .navigation ul li a{
+            display: block;
+            padding: 0.5rem 0;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+        .navigation ul li a:hover{
+            background: #222222;
+        }
+}
